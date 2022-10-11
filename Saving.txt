@@ -1,0 +1,185 @@
+        def move_up():
+
+            Hor_Y = 750
+            Drag_X = 470
+            DX = 1300
+            Ver_X = 960
+            Drag_Y = 220
+            DY = 550
+            time_wait_getpos=0.09
+            check_for_disturbance()
+            click_checker((300,300))
+            mouse.drag(Ver_X, Drag_Y, Ver_X, Drag_Y+DY, True, 0.01)
+            mouse.move(Drag_X+DX, Hor_Y, True, 0)
+            time.sleep(time_wait_getpos)
+            mouse.press(button='left')
+
+            time.sleep(0.5)
+            mouse.release(button='left')
+            mouseclick(Drag_X,73)
+            if cfds==1:
+                check_for_disturbance()
+            time.sleep(swipe_delay)
+
+
+        def move_down():
+            Hor_Y = 750
+            Drag_X = 470
+            DX = 1300
+            Ver_X = 960
+            Drag_Y = 220
+            DY = 550
+            time_wait_getpos=0.09
+
+            check_for_disturbance()
+
+            click_checker((300,300))
+
+            mouse.drag(Ver_X, Drag_Y+DY-220, Ver_X, Drag_Y, True, 0.01)
+            mouse.move(960, 330, True, 0)
+            time.sleep(time_wait_getpos)
+            mouse.press(button='left')
+
+            time.sleep(0.5)
+            mouse.release(button='left')
+            mouseclick(Drag_X,73)
+
+            if cfds==1:
+                check_for_disturbance()
+
+            time.sleep(swipe_delay)
+
+        def move_right():
+            Hor_Y = 750
+            Drag_X = 470
+            DX = 1300
+            Ver_X = 960
+            Drag_Y = 220
+            DY = 550
+            time_wait_getpos=0.09
+
+            check_for_disturbance()
+            click_checker((300,300))
+            mouse.drag(1746, 723, 178, 723, True, 0.01)
+            mouse.move(Ver_X, Drag_Y+DY-220, True, 0)
+            time.sleep(time_wait_getpos)
+            mouse.press(button='left')
+
+            time.sleep(0.5)
+            mouse.release(button='left')
+            mouseclick(287,73)
+
+            if cfds==1:
+                check_for_disturbance()
+            time.sleep(swipe_delay)
+
+
+
+        def top_left():
+
+            Hor_Y = 750
+            Drag_X = 470
+            DX = 1300
+            Ver_X = 960
+            Drag_Y = 220
+            DY = 550
+
+            time_wait_getpos=0.09
+
+            check_for_disturbance()
+            click_checker((300,300))
+
+
+            mouse.drag(960, 330, 1770, 770, True, 0.01)
+            #mouse.move(Ver_X, Drag_Y+DY-220, True, 0)
+            time.sleep(time_wait_getpos)
+            mouse.press(button='left')
+            time.sleep(0.5)
+            mouse.release(button='left')
+
+            if cfds==1:
+                check_for_disturbance()
+            mouseclick(1300,50)
+            time.sleep(swipe_delay)
+
+        def top_right():
+
+            time_wait_getpos=0.09
+
+            check_for_disturbance()
+            click_checker((300,300))
+            mouse.drag(1513,220,440,710, True, 0.01)
+            #mouse.move(Ver_X, Drag_Y+DY-220, True, 0)
+            time.sleep(time_wait_getpos)
+            mouse.press(button='left')
+            time.sleep(0.5)
+            mouse.release(button='left')
+            mouseclick(287,50)
+            if cfds==1:
+                check_for_disturbance()
+            mouseclick(1300,50)
+            time.sleep(swipe_delay)
+
+        def bottom_right():
+
+            time_wait_getpos=0.09
+
+            check_for_disturbance()
+            click_checker((300,300))
+
+            mouse.drag(1551,748,250,250, True, 0.01)
+            #mouse.move(Ver_X, Drag_Y+DY-220, True, 0)
+            time.sleep(time_wait_getpos)
+            mouse.press(button='left')
+            time.sleep(0.5)
+            mouse.release(button='left')
+            mouseclick(690,50)
+            if cfds==1:
+                check_for_disturbance()
+            mouseclick(1300,50)
+            time.sleep(swipe_delay)
+
+        def bottom_left():
+
+            time_wait_getpos=0.09
+
+            check_for_disturbance()
+            click_checker((300,300))
+            mouse.drag(223,748,1551,229, True, 0.01)
+            #mouse.move(Ver_X, Drag_Y+DY-220, True, 0)
+            time.sleep(time_wait_getpos)
+            mouse.press(button='left')
+            time.sleep(0.5)
+            mouse.release(button='left')
+            mouseclick(1300,50)
+
+            if cfds==1:
+                check_for_disturbance()
+            mouseclick(1300,50)
+            time.sleep(swipe_delay)
+
+        def move_left():
+            Hor_Y = 750
+            Drag_X = 470
+            DX = 1300
+            Ver_X = 960
+            Drag_Y = 220
+            DY = 550
+            time_wait_getpos=0.09
+
+            
+
+            check_for_disturbance()
+            click_checker((300,300))
+            mouse.drag(Drag_X, Hor_Y, Drag_X+DX, Hor_Y, True, 0.01)
+            mouse.move(Ver_X, Drag_Y, True, 0)
+            time.sleep(time_wait_getpos)
+            mouse.press(button='left')
+            time.sleep(0.5)
+            mouse.release(button='left')
+            mouseclick(1300,50)
+            if cfds==1:
+                check_for_disturbance()
+            mouseclick(1300,50)
+            time.sleep(swipe_delay)
+            
